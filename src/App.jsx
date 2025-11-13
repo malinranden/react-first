@@ -1,25 +1,34 @@
 import Project from "./components/Project.jsx";
+import Brhomaon from "./assets/brhomaon.png";
+import genesis from "./assets/genesis.png";
+import groupAssignment from "./assets/group-assignment.png";
 
 function App() {
   return (
     <>
       <Project 
-        title = "Project 1"
-        link = "GitHub Repo Link"
-        techUsed = "Tech used"
-        shortWriteUp = "A short write up"
+        title = "BRHOMAON"
+        img = {Brhomaon}
+        link = "https://github.com/malinranden/test-your-skills.git"
+        techUsed = "Tech used: HTML, CSS"
+        shortWriteUp = "A short write up :)"
+        info = "Hej hallå här kommer de stå info om testet"
       ></Project>
       <Project 
-        title = "Project 2" 
-        link = "GitHub Repo Link"
-        techUsed = "Tech used"
-        shortWriteUp = "A short write up"
+        title = "Genesis" 
+        img = {genesis}
+        link = "https://github.com/malinranden/Assignment-lesson-11-Sass.git"
+        techUsed = "Tech used: HTML, CSS"
+        shortWriteUp = "A short write up =)"
+        info = "Denna är nästa som står ANNAN info i"
       />
       <Project 
-        title = "Project 3" 
-        link = "GitHub Repo Link"
-        techUsed = "Tech used"
-        shortWriteUp = "A short write up"
+        title = "Group Assignment" 
+        img = {groupAssignment}
+        link = "#"
+        techUsed = "Tech used: HTML, CSS"
+        shortWriteUp = "A short write up :D"
+        info = "O här kommer den tredje!"
       />
     </>
   )
