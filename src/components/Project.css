@@ -28,3 +28,11 @@
 .projectText {
     color: rgb(50, 142, 142);
 }
+.Portfolio {
+    display: flex;
+    align-items: center;
+
+}
+.Portfolio-h2 {
+    text-align: center;
+}

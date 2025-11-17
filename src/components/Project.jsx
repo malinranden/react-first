@@ -7,6 +7,7 @@ function Project(props) {
             <h2 className="projectTitle">{props.title}</h2>
             <img src={props.img} alt="" className="img"/>
             <a href={props.link} className="projectText">Repository at GitHub</a>
+            {/* i could put in a new linkName at the links */}
             <p className="projectText">{props.techUsed}</p>
             <p className="projectText">{props.shortWriteUp}
                 <ul>
