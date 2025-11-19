@@ -1,8 +1,3 @@
-// import Project from "./components/Project.jsx"; // remove?
-// import Brhomaon from "./assets/brhomaon.png";
-// import genesis from "./assets/genesis.png";
-// import groupAssignment from "./assets/group-assignment.png";
-
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";

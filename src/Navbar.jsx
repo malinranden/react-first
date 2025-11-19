@@ -1,14 +1,13 @@
 import {Link} from "react-router-dom";
-// import './index.css' // not needed :)
 
 function Navbar () {
     return (
         <>
             <nav className="Navbar">
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
+                <ul className="Navbar-Ul">
+                    <li className="Navbar-Li"><Link className="Navbar-Li" to="/">Home</Link></li>
+                    <li className="Navbar-Li"><Link className="Navbar-Li" to="/about">About</Link></li>
+                    <li className="Navbar-Li"><Link className="Navbar-Li" to="/portfolio">Portfolio</Link></li>
                 </ul>
             </nav>
         </>

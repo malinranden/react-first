@@ -2,14 +2,19 @@ import Project from "../components/Project.jsx";
 import Brhomaon from "../assets/brhomaon.png"; // ./ eller ../ ? 
 import genesis from "../assets/genesis.png";
 import groupAssignment from "../assets/group-assignment.png";
-// import "../Project.css";
+import {useState} from "react";
 
 function Portfolio () {
-    // import Project from "../components/Project.jsx"; // my try
+    const [showProjects, setShowProjects] = useState(false);
+    const buttonClick = () => {
+        setShowProjects(!showProjects);
+    }
     return (
         <div>
+            <button onClick= {buttonClick}>{showProjects ? "Hide projects" : "Show projects"}</button>
             <h2 className="Portfolio-h2">Portfolio</h2>
-                <div className="Portfolio">    
+            {showProjects && 
+            <div className="Portfolio" id="Portfolio">    
                     <Project 
                         title = "BRHOMAON"
                         img = {Brhomaon}
@@ -34,7 +39,8 @@ function Portfolio () {
                         shortWriteUp = "A short write up :D"
                         info = "O här kommer den tredje!"
                     />
-                </div>
+                </div>}
+                
         </div>
     )
 }

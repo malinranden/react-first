@@ -4,11 +4,35 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 #root {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Navbar {
-    /* background-color: aliceblue; */
+    background-color: aliceblue;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-Ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.Navbar-Li  {
+    text-decoration: none;
+    list-style: none;
 }
