@@ -1,3 +1,6 @@
+/* I copied this whole page and put in index.css and it all still works */
+/* - but its better to separate on this assignment */
+
 
 .projectDiv {
     color: #333;
@@ -33,7 +36,35 @@
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .Portfolio-h2 {
     text-align: center;
+} 
+
+
+.project-Div-Big {
+    color: #333;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 600px;
+    border: 3px solid rgb(251, 142, 0);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 130px;
+    left: auto;
+    right: auto;
+    display: flex;
+}
+
+.project-background-div {
+    /* position: absolute; */
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100%;
+}
+
+.popContent {
+    background-color: blueviolet;
 }
