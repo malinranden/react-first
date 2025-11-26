@@ -7,7 +7,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 #root {
     text-align: center;
     width: 100%;
@@ -22,7 +21,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .Navbar-Ul {
@@ -41,31 +39,4 @@ body {
 }
 .Navbar-Li:hover {
     color: #333333b6;
-}
-
-
-
-
-/* this is for hte Testpopup and Testcomponent */
-.project1 {
-    background-color: aqua;
-}
-.project2 {
-    background-color: blue;
-}
-
-.Thepopup {
-    color: #333;
-    background-color: rgb(255, 255, 255);
-    width: 1000px;
-    height: 600px;
-    border: 3px solid rgb(251, 142, 0);
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    position: absolute;
-    top: 130px;
-    left: auto;
-    right: auto;
-    display: flex;
 }

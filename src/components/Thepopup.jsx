@@ -1,24 +1,16 @@
-import Project from "./Project.jsx";
-import "../index.css";
-import Portfolio from "../Pages/Portfolio.jsx";
-// import "./Project.css";
-import { useState } from "react";
-
-
-
-
-
+import "./Thepopup.css"
 
 function Thepopup({popupContent, onClose}) {
     
     return (
+        <div className="backgroundThepopup" onClick={onClose}>
         <div className="Thepopup">
-            <button onClick={onClose}>Stäng</button>
+            <button onClick={onClose} className="close-buttonThepopup">x</button>
             {popupContent}
-        </div>           
+        </div>
+        </div>
     )
 }
-
 
 export default Thepopup;
 

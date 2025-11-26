@@ -13,8 +13,8 @@ function Portfolio () {
     }
     const [openPopup, setOpenPopup] = useState(null);
     return (
-        <div>
-            <button onClick= {buttonClick}>{showProjects ? "Hide projects" : "Show projects"} </button>
+        <div className="background-Portfolio"> 
+            <button className="btn-showprojects" onClick= {buttonClick}>{showProjects ? "Hide projects" : "Show projects"} </button>
             <h2 className="Portfolio-h2">Portfolio</h2>
             {showProjects && 
             <div className="Portfolio">
@@ -64,7 +64,6 @@ function Portfolio () {
             {openPopup && (
                 <Thepopup popupContent={openPopup} onClose={() => setOpenPopup(null)} />
             )}
-                
         </div>
     )
 }
