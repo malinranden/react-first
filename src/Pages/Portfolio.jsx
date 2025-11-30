@@ -25,7 +25,7 @@ function Portfolio () {
             </div>
 
             {showProjects && (
-                <div className="">
+                <div className="background-Projects">
                     {/* {Information.filter(project => project.title.toLocaleLowerCase().includes(search.toLowerCase()))
             
                     .map((project, index) => (

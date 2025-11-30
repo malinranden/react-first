@@ -14,9 +14,12 @@
     border-radius: 10px;
 }
 .projectDiv:hover {
-    background-color: rgba(255, 255, 255, 0.826);
+    
     transform: scale(1.01); /* om man inte vill att det runtomkring förstoras!!! */
     border: 3px solid rgb(210, 105, 0);
+}
+.projectDiv:active {
+    background-color: rgba(255, 255, 255, 0.826);
 }
 
 .img {
@@ -56,8 +59,18 @@
     height: 30px;
     text-align: center;
     border-radius: 7px;
+    border: 2px solid rgb(251, 142, 0);
+}
+.searchform:hover {
+    background-color: rgba(255, 255, 255, 0.826);
+    border-color: rgb(210, 105, 0);
 }
 .searchform:focus {
-    background-color: #e8e8e8;
     outline: none;
+    border-color: rgb(210, 105, 0);
+}
+
+.background-Projects {
+    display: flex;
+    align-items: center;
 }
