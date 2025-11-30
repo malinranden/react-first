@@ -6,18 +6,19 @@ function ProjectStructure({project, onClick}) {
         <div className="projectDiv" onClick={onClick}>
             <h2 className="projectTitle">{project.title}</h2>
             <img src={project.img} alt={project.title} className="img"/>
-            <p className="projectText">{project.tags.join(" ")}</p>
+            <p className="projectText">{project.tags}</p>
         </div>
     )
 }
 export default ProjectStructure;
 
 
+
+
+
+
 // onClick={() => Information.setOpenPopup(Information.popupContent)}
 // onClick={() => Information.setOpenPopup(Information.popupContent)}
-
-
-
 
 
 // className={popup ? "project-Div-Big"  : "projectDiv" } onClick={() => setPopup(!popup)}

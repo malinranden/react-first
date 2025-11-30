@@ -8,7 +8,7 @@ function Portfolio () {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
     const [search, setSearch] = useState("");
-    
+ 
     return (
 
         <div className="background-Portfolio"> 
@@ -19,32 +19,35 @@ function Portfolio () {
                        placeholder="Search tag..."
                        value={search}
                        onChange={(e) => setSearch(e.target.value)}
+                       className="searchform"
+                       name="why" // it says that an input field should have a name or ID
                 /> 
             </div>
 
             {showProjects && (
                 <div className="">
-                    {Information.filter(project => project.title.toLocaleLowerCase().includes(search.toLowerCase()))
-                    
+                    {/* {Information.filter(project => project.title.toLocaleLowerCase().includes(search.toLowerCase()))
+            
                     .map((project, index) => (
                         <ProjectStructure 
                             key={index}
                             project={project}
                             onClick={() => setSelectedProject(project)} 
                         />
-                    ))}
+                    ))} */}
 
+{/* now i can only search for tags, i dont know how to make it work for several options, fex adding the title aboce */}
 
-                    {/* {Information.filter(project => project.tags.toLowerCase().includes(search.toLowerCase()))
-                    .map((project, index) => (
-                        <ProjectStructure 
-                            key={index}
-                            project={tags}
-                            onClick={() => setSelectedProject(project)} 
-                        />
-                    ))
-                    } */}
-
+                    {Information.filter((project => 
+                        (project.tags.some((tags) => tags.toLocaleLowerCase().includes(search.toLocaleLowerCase())))))
+                        .map((project, index) => (
+                            <ProjectStructure 
+                                key={index}
+                                project={project}
+                                onClick={() => setSelectedProject(project)}
+                                />
+                        ))
+                        }
                     
                 </div>
             )}
