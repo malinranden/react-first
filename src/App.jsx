@@ -5,6 +5,7 @@ import Portfolio from "./Pages/Portfolio.jsx";
 import Navbar from "./Navbar.jsx";
 // import Testpopup from "./Pages/Testpopup.jsx";
 
+// Here, in App: what will be same on all pages, fex navbar, header, footer
 function App() {
   return (
     <>

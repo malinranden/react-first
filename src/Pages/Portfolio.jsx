@@ -26,29 +26,19 @@ function Portfolio () {
 
             {showProjects && (
                 <div className="background-Projects">
-                    {/* {Information.filter(project => project.title.toLocaleLowerCase().includes(search.toLowerCase()))
-            
-                    .map((project, index) => (
-                        <ProjectStructure 
+                    {Information.filter(project =>
+                        project.title.toLowerCase().includes(search.toLowerCase()) ||
+                        project.tags.some(tag =>
+                        tag.toLowerCase().includes(search.toLowerCase())))
+                        
+                        .map((project, index) => (
+                            <ProjectStructure
                             key={index}
                             project={project}
-                            onClick={() => setSelectedProject(project)} 
-                        />
-                    ))} */}
-
-{/* now i can only search for tags, i dont know how to make it work for several options, fex adding the title aboce */}
-
-                    {Information.filter((project => 
-                        (project.tags.some((tags) => tags.toLocaleLowerCase().includes(search.toLocaleLowerCase())))))
-                        .map((project, index) => (
-                            <ProjectStructure 
-                                key={index}
-                                project={project}
-                                onClick={() => setSelectedProject(project)}
-                                />
+                            onClick={() => setSelectedProject(project)}
+                            />
                         ))
-                        }
-                    
+                    }
                 </div>
             )}
 
